@@ -20,12 +20,12 @@ let ezraEmployee = {
 // console.log(ezraEmployee.name);
 // console.log(ezraEmployee["name"]);
 
-let info = `
-            The employee name is ${ezraEmployee.name}. 
-            Their job title is ${ezraEmployee.jobTitle}. 
-            They make $${ezraEmployee.payRate} per hour.
-            `;
-console.log(info);
+// let info = `
+//             The employee name is ${ezraEmployee.name}.
+//             Their job title is ${ezraEmployee.jobTitle}.
+//             They make $${ezraEmployee.payRate} per hour.
+//             `;
+// console.log(info);
 // console.log(ezraEmployee.payRate, ezraEmployee.jobTitle);
 
 // function printEmployee(employee) {
@@ -33,3 +33,11 @@ console.log(info);
 // }
 
 // printEmployee(ezraEmployee);
+
+function giveRaise(ezraEmployee) {
+  ezraEmployee.payRate = ezraEmployee.payRate * 1.2;
+  return ezraEmployee;
+}
+
+let updatedEmployee = giveRaise(ezraEmployee);
+console.log(updatedEmployee);
