@@ -10,9 +10,15 @@
 let object = {};
 let array = [];
 
-let employee = {
+let ezraEmployee = {
   employeeId: "1",
   name: "Ezra",
   jobTitle: "Theatre Teacher",
   payRate: 38.46,
 };
+
+function printEmployee(employee) {
+  console.log(employee);
+}
+
+printEmployee(ezraEmployee);
