@@ -17,6 +17,9 @@ let ezraEmployee = {
   payRate: 38.46,
 };
 
+// console.log(ezraEmployee.name);
+// console.log(ezraEmployee["name"]);
+
 let info = `
             The employee name is ${ezraEmployee.name}. 
             Their job title is ${ezraEmployee.jobTitle}. 
