@@ -1,5 +1,3 @@
-let partCode1 = "XYZ:1234-L";
-
 function parsePartCode(partCode) {
   return {
     supplierCode: getSupplierCode(partCode),
@@ -24,7 +22,7 @@ function getSize(partCode) {
   return partCode.substring(positionOfHyphen + 1);
 }
 
+let partCode1 = "XYZ:1234-L";
 let part1 = parsePartCode(partCode1);
-console.log("Supplier: " + part1.supplierCode + 
-            " Product Number: " + part1.productNumber + 
-            " Size: " + part1.size);
+console.log(part1);
+console.log("Supplier: " + part1.supplierCode + " Product Number: " + part1.productNumber + " Size: " + part1.size);
