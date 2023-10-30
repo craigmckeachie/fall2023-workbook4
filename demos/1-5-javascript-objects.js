@@ -7,8 +7,8 @@
 
 // doSomethingWithEmployee(employeeId, name, jobTitle, payRate);
 
-let object = {};
-let array = [];
+// let object = {};
+// let array = [];
 
 let ezraEmployee = {
   employeeId: "1",
@@ -17,8 +17,16 @@ let ezraEmployee = {
   payRate: 38.46,
 };
 
-function printEmployee(employee) {
-  console.log(employee);
-}
+let info = `
+            The employee name is ${ezraEmployee.name}. 
+            Their job title is ${ezraEmployee.jobTitle}. 
+            They make $${ezraEmployee.payRate} per hour.
+            `;
+console.log(info);
+// console.log(ezraEmployee.payRate, ezraEmployee.jobTitle);
 
-printEmployee(ezraEmployee);
+// function printEmployee(employee) {
+//   console.log(employee);
+// }
+
+// printEmployee(ezraEmployee);
