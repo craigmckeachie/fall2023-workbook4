@@ -1,11 +1,17 @@
-let myInfo = {
+let contactInfo = {
   name: "Pursalane Faye",
   address: "121 Main Street",
-  /* other properties not shown */
+  city: "Ashland",
+  state: "Ohio",
+  zip: "44805",
 };
 
 function printContact(contact) {
-  console.log(contact);
+  console.log(`
+    ${contact.name}
+    ${contact.address}
+    ${contact.city}, ${contact.state} ${contact.zip}
+  `);
 }
 
-printContact(myInfo);
+printContact(contactInfo);
