@@ -4,7 +4,7 @@
 let count = 1;
 
 while (count <= 100) {
-  //stuff in here is going to happen 100 times  
+  //stuff in here is going to happen 100 times
   console.log("did something difficult");
   count = count + 1; //incrementing the loop so it doesn't run infinitely
 }
