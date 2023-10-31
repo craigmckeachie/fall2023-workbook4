@@ -9,10 +9,18 @@ while (count <= 10) {
 }
 
 // for (part1; part2; part3) {
-    //do something repetitive
+//do something repetitive
 // }
 
 //   part 1     ; part 2     ; part 3
 for (let count = 1; count <= 10; count = count + 1) {
   console.log("did something difficult | for loop");
 }
+
+// function doSomethingDifficult10Times() {
+//     for (let count = 1; count <= 10; count = count + 1) {
+//       console.log("did something difficult | for loop");
+//     }
+// }
+
+// doSomethingDifficult10Times();
