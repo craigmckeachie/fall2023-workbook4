@@ -1,8 +1,18 @@
-let shows = ["Breaking Bad","Better Call Saul", "Friends", "Supernatural"]
+let shows = ["Breaking Bad","Better Call Saul", "Friends", "Supernatural", "Brooklyn 99", "Modern Family"]
 
-for(let count =0; count<4; count++  ){
-    console.log(shows[count]);
+for (let index = 0; index < shows.length; index++) {
+    const show = shows[index];
+    console.log(show);  
 }
+
+for (const show of shows) {
+    console.log(show);
+}
+
+
+// for(let count =0; count< shows.length; count++){
+//     console.log(shows[count]);
+// }
 
 
 // console.log(shows[0]);
