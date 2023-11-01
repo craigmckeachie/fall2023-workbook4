@@ -9,10 +9,10 @@ let menuItems = [
 
 function getMenuItemsInCategory(menuItems, category) {
   //unmentionables
-  //this is an empty array that is going to store a subset of items from the bigger array
+  //this is an empty array/list that is going to store a subset of items/elements/objects from the bigger array
   let matchingMenuItems = [];
 
-  //for of   one object/item of array (list/collection)
+  //for of: one object/item of array (list/collection)
   for (const menuItem of menuItems) {
     //checking if an item meets a condition, for example is it in a category
     if (menuItem.category == category) {
@@ -21,14 +21,15 @@ function getMenuItemsInCategory(menuItems, category) {
     }
   }
 
-  //for loop
+  //this code does the same as the above just using a for loop
+  //for loop: one object/item of array (list/collection)
   //   for (let index = 0; index < menuItems.length; index++) {
   //     const menuItem = menuItems[index];
   //     if (menuItem.category == category) {
   //       matchingMenuItems.push(menuItem);
   //     }
   //   }
- //returning matching items so that they can be caught when the function is called
+  //returning matching items so that they can be caught when the function is called
   return matchingMenuItems;
 }
 
