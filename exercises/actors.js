@@ -1,5 +1,7 @@
 "use strict";
 
+
+// array (members) -> object (member) -> array (films | member.films) 
 let academyMembers = [
   {
     memID: 101,
@@ -22,3 +24,15 @@ let academyMembers = [
     films: ["Walking Boots", "Hiking Boots", "Cowboy Boots"],
   },
 ];
+
+// Who is the Academy Member whose ID is 187?
+
+for (const member of academyMembers) {
+    console.log(member.name);
+}
+
+
+// Who has have been in at least 3 films?
+// Who has a name that starts with "Bob"?
+// HARDER: Which Academy Members have been in a film
+// that starts with "A"
