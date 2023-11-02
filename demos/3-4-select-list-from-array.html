@@ -86,9 +86,9 @@
             console.log(state);
             //creates an option element
             let option = document.createElement("option");
-            option.textContent = "Pennsylvania";
+            option.textContent = state.name;
             //setting the value property is creating an attribute on the option element
-            option.value = "PA";
+            option.value = state.abbrev;
             statesList.appendChild(option);
         }
 
