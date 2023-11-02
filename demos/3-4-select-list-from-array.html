@@ -18,6 +18,8 @@
         <label for="statesList">State</label>
         <select id="statesList">
           <option value="">Select...</option>
+          <option value="AL">Alabama</option>
+
         </select>
       </form>
     </main>
@@ -79,7 +81,20 @@
       const statesList = document.getElementById("statesList");
 
       //write functions
-      function loadStatesList() {}
+      function loadStatesList() {
+        for (const state of states) {
+            console.log(state);
+            //creates an option element
+            let option = document.createElement("option");
+            option.textContent = "Pennsylvania";
+            //setting the value property is creating an attribute on the option element
+            option.value = "PA";
+            statesList.appendChild(option);
+        }
+
+      }
+
+      loadStatesList();
     </script>
   </body>
 </html>
