@@ -20,6 +20,7 @@
           <option value="">Select...</option>
           <option value="AL">Alabama</option>
         </select>
+        <button type="button" id="selectStateButton">Select State</button>
       </form>
     </main>
     <script>
@@ -78,6 +79,7 @@
 
       //get html elements into variables
       const statesList = document.getElementById("statesList");
+      const selectStateButton = document.getElementById("selectStateButton");
 
       //write functions
       function loadStatesList() {
@@ -96,11 +98,22 @@
         }
       }
 
-      loadStatesList();
-      //OR
-      //   window.onload = function () {
+      function displayStateInformation() {
+        console.log(statesList.value);
+      }
+
+      
+      //wire-up functions to events
+
+      //advanced page load
+      //   function init() {
       //     loadStatesList();
-      //   };
+      //     selectStateButton.onclick = displayStateInformation;
+      //   }
+      //   window.onload = init;
+
+      loadStatesList();
+      selectStateButton.onclick = displayStateInformation;
     </script>
   </body>
 </html>
