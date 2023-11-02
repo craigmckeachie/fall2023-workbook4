@@ -88,6 +88,10 @@
           option.textContent = state.name;
           //setting the value property is creating an attribute on the option element
           option.value = state.abbrev;
+
+          //or
+          //   let option = new Option(state.name, state.abbrev);
+
           statesList.appendChild(option);
         }
       }
