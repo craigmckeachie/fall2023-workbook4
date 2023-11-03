@@ -13,7 +13,9 @@
           <option value="">Select...</option>
           <option value="PITT">Pittsburgh Steelers</option>
         </select>
+        <button id="detailsButton">Show Details</button>
       </form>
+      <p id="teamDetailsParagraph"></p>
     </main>
     <script>
       "use strict";
@@ -27,6 +29,7 @@
 
       //get html elements into variables
       const teamsList = document.getElementById("teamsList");
+      const teamDetailsParagraph = document.getElementById("teamDetailsParagraph");
 
       //create functions to handle user events
       function loadTeams() {
