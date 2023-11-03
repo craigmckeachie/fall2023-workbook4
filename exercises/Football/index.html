@@ -30,6 +30,7 @@
       //get html elements into variables
       const teamsList = document.getElementById("teamsList");
       const teamDetailsParagraph = document.getElementById("teamDetailsParagraph");
+      const detailsButton = document.getElementById("detailsButton")  
 
       //create functions to handle user events
       function loadTeams() {
@@ -41,8 +42,18 @@
           teamsList.appendChild(option);
         }
       }
+
+      function showTeamDetails() {
+        console.log(teamsList.value);
+      }
+
+
       //wire-up functions
+      detailsButton.onclick = showTeamDetails;
+      
       loadTeams();
+
+
     </script>
   </body>
 </html>
