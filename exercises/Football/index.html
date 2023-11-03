@@ -11,7 +11,6 @@
         <label for="teamsList">Team</label>
         <select id="teamsList">
           <option value="">Select...</option>
-          <option value="PITT">Pittsburgh Steelers</option>
         </select>
         <button type="button" id="detailsButton">Show Details</button>
       </form>
@@ -21,6 +20,7 @@
       "use strict";
 
       let teams = [
+        { code: "PITT", name: "Pittsburgh Steelers", plays: "Pittsburgh, PA" },
         { code: "DAL", name: "Dallas Cowboys", plays: "Arlington, TX" },
         { code: "DEN", name: "Denver Broncos", plays: "Denver, CO" },
         { code: "HOU", name: "Houston Texans", plays: "Houston, TX" },
