@@ -35,7 +35,6 @@
       //create functions to handle user events
       function loadTeams() {
         for (const team of teams) {
-          console.log(team);
           let option = document.createElement("option");
           option.textContent = team.name;
           option.value = team.code;
@@ -44,8 +43,15 @@
       }
 
       function showTeamDetails() {
-        console.log(teamsList.value);
-        teamDetailsParagraph.innerText = teamsList.value; 
+        const teamCode = teamsList.value;
+        for (const team of teams) {
+            if (team.code == teamCode) {
+                console.log(team);
+            }
+        }
+
+
+        teamDetailsParagraph.innerText = teamCode; 
       }
 
 
