@@ -11,6 +11,7 @@
         <label for="teamsList">Team</label>
         <select id="teamsList">
           <option value="">Select...</option>
+          <option value="PITT">Pittsburgh Steelers</option>
         </select>
       </form>
     </main>
@@ -30,7 +31,11 @@
       //create functions to handle user events
       function loadTeams() {
         for (const team of teams) {
-            console.log(team);
+          console.log(team);
+          let option = document.createElement("option");
+          option.textContent = team.name;
+          option.value = team.code;
+          teamsList.appendChild(option);
         }
       }
       //wire-up functions
