@@ -13,7 +13,7 @@
           <option value="">Select...</option>
           <option value="PITT">Pittsburgh Steelers</option>
         </select>
-        <button id="detailsButton">Show Details</button>
+        <button type="button" id="detailsButton">Show Details</button>
       </form>
       <p id="teamDetailsParagraph"></p>
     </main>
@@ -45,6 +45,7 @@
 
       function showTeamDetails() {
         console.log(teamsList.value);
+        teamDetailsParagraph.innerText = teamsList.value; 
       }
 
 
