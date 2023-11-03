@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
   </head>
   <body>
     <main>
-      <form>
-        <label for="teamsList">Team</label>
-        <select id="teamsList">
-          <option value="">Select...</option>
-        </select>
-        <button type="button" id="detailsButton">Show Details</button>
-      </form>
-      <p id="teamDetailsParagraph"></p>
+      <article>
+        <form>
+          <label for="teamsList">Team</label>
+          <select id="teamsList">
+            <option value="">Select...</option>
+          </select>
+          <button type="button" id="detailsButton">Show Details</button>
+        </form>
+        <p id="teamDetailsParagraph"></p>
+      </article>
     </main>
     <script>
       "use strict";
