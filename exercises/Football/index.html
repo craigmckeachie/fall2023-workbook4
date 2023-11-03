@@ -30,7 +30,7 @@
       //get html elements into variables
       const teamsList = document.getElementById("teamsList");
       const teamDetailsParagraph = document.getElementById("teamDetailsParagraph");
-      const detailsButton = document.getElementById("detailsButton")  
+      const detailsButton = document.getElementById("detailsButton");
 
       //create functions to handle user events
       function loadTeams() {
@@ -45,22 +45,18 @@
       function showTeamDetails() {
         const teamCode = teamsList.value;
         for (const team of teams) {
-            if (team.code == teamCode) {
-                console.log(team);
-            }
+          if (team.code == teamCode) {
+            console.log(team);
+          }
         }
 
-
-        teamDetailsParagraph.innerText = teamCode; 
+        teamDetailsParagraph.innerText = teamCode;
       }
-
 
       //wire-up functions
       detailsButton.onclick = showTeamDetails;
-      
+
       loadTeams();
-
-
     </script>
   </body>
 </html>
