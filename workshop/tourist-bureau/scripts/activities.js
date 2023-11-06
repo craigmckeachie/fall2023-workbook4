@@ -127,7 +127,14 @@ function loadCategoryList() {
   }
 }
 
-function loadActivityList() {}
+function loadActivityList() {
+  for (const activity of activities) {
+    let option = document.createElement("option");
+    option.textContent = activity.name;
+    option.value = activity.id;
+    activityList.appendChild(option);
+  }
+}
 
 //wire-up/connect functions to events
 loadCategoryList();
