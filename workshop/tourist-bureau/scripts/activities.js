@@ -100,3 +100,24 @@ let activities = [
         price: 0.00 
     }
 ];
+
+
+//get html elements
+const categoryList = document.getElementById("categoryList");
+const activityList = document.getElementById("activityList");
+
+//create functions to handle events
+function loadCategoryList() {
+
+}
+
+
+function loadActivityList() {
+    
+}
+
+
+
+//wire-up/connect functions to events
+loadCategoryList();
+loadActivityList();
