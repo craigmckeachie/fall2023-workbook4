@@ -136,6 +136,24 @@ function loadActivityList() {
   }
 }
 
+function loadActivityListByCategory(category) {
+  for (const activity of activities) {
+    if (activity.category == category) {
+      let option = document.createElement("option");
+      option.textContent = activity.name;
+      option.value = activity.id;
+      activityList.appendChild(option);
+    }
+  }
+}
+
+function categoryListChanged() {
+  const categoryName = categoryList.value;
+  console.log(categoryName);
+}
+
 //wire-up/connect functions to events
+categoryList.onchange = categoryListChanged;
+
 loadCategoryList();
 loadActivityList();
