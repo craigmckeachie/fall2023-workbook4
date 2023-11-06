@@ -127,7 +127,15 @@ function loadCategoryList() {
   }
 }
 
+function loadDefaultOption() {
+  let option = document.createElement("option");
+  option.textContent = "Select...";
+  option.value = "";
+  activityList.appendChild(option);
+}
+
 function loadActivityList() {
+  loadDefaultOption();
   for (const activity of activities) {
     let option = document.createElement("option");
     option.textContent = activity.name;
@@ -137,6 +145,8 @@ function loadActivityList() {
 }
 
 function loadActivityListByCategory(category) {
+  activityList.options.length = 0;
+  loadDefaultOption();
   for (const activity of activities) {
     if (activity.category == category) {
       let option = document.createElement("option");
@@ -149,7 +159,7 @@ function loadActivityListByCategory(category) {
 
 function categoryListChanged() {
   const categoryName = categoryList.value;
-  console.log(categoryName);
+  loadActivityListByCategory(categoryName);
 }
 
 //wire-up/connect functions to events
