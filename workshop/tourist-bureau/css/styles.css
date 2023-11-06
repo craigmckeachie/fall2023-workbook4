@@ -1,0 +1,10 @@
+body > header {
+  padding: 0.5rem;
+}
+.hero {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 4rem;
+  background-color: #efefef;
+}
